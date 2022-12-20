@@ -5,58 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
 </head>
 <body>
-    <div class="relative capitalize text-white flex flex-col">
+    <div>
     <!--navbar-->
-    <nav class="fixed z-20 opacity-80 shadow-2xl bg-fuchsia-500 w-screen h-24 flex justify-end text-xl  space-x-16">
+    <nav>
         <!--menu-->
-      
-        <div class="relative m-8 space-x-24">
-        <a href="index.html" class="hover:font-bold">home</a>
-        <a href="projects.html" class="hover:font-bold">projects</a>
-        <a href="blogs.html" class="hover:font-bold">blogs</a>
+        <div>
+        <a href="index.html" class="ch">home</a>
+        <a href="projects.html" class="ch">projects</a>
+        <a href="blogs.html" class="ch">blogs</a>
         </div>
-</nav>
-
-<div class="bg-white w-screen h-screen flex ">
-
+    </nav>
+    <!--section-->
+<div class="section">
+    <div class="secondaryEdit">
     <div>
-    <div>
-    <h1 class="font-bold normal-case text-black text-6xl mt-52 ml-52 mr-52  ">
-        Hello World :   <br>  <br> 
-        <p class="text-xl text-neutral-400 font-normal">Hi there, Kashish here ! <br>
+    <h1 class="introHead">
+        Hello World : 
+    </h1> 
+        <p class="intro">Hi there, Kashish here ! <br>
             Currently I am a student. I am mostly intrested in STEM<br>
     Since childhood, whenever i used to see those sci-fi movies, <br/> 
     those hackers scenes. i got this urge to tinker with computers & stuff. <br/>
 So, am just trying out web dev for now</p>
-    </h1>
-    </div>
-
-    <div>
-    <h1 class="font-bold capitalize text-black text-3xl hover:text-2xl ml-52 mr-52 mt-12">
+</div>
+<div>
+    <h1 class="skillHead">
            Current Skills:
-           <br/>  <br/>
-           <ul>
+           </h1>
+           <ul class="skills">
             <li> HTML</li>
             <li> CSS</li>
             <li> Tailwindcss</li>
             <li> javascript</li>
            </ul>
-    </h1>
-    </div>
-
-    </div>
-   <div>
-    <img style="width: 700px; position: relative; top: 80px;" src="https://freewebillustrations.com/static/images/preview/delesign-free-designs-coding.png" alt="code"/>
-   </div>
+        </div>
+   
 </div>
-<div class="bg-fuchsia-500 w-screen h-32 flex justify-center text-xl  space-x-16">
-    <a href="https://github.com/kaxhish" class="mt-5 w-24 h-24"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="git"></a>
-    <a href="https://www.sololearn.com/profile/17524113/?ref=app" class="mt-5 w-24 h-24"><img class="rounded-2xl"  src="https://play-lh.googleusercontent.com/3FJK610qmv8JEuKQIXNv9lbwCfdYZVQ_c8p-tGmtYzML_Z-Sv3P7I2yVxZKKhzsCvw" alt="sololearn"></a>
-    
+    <div>
+        <img style="width: 700px; position: relative; top: 80px; margin: 20px;" src="https://freewebillustrations.com/static/images/preview/delesign-free-designs-coding.png" alt="code"/>
+    </div>
+    </div>
+    <!--link-->
+<div class="header">
+    <a href="https://github.com/kaxhish"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="git"></a>
+    <a href="https://www.sololearn.com/profile/17524113/?ref=app"><img src="https://play-lh.googleusercontent.com/3FJK610qmv8JEuKQIXNv9lbwCfdYZVQ_c8p-tGmtYzML_Z-Sv3P7I2yVxZKKhzsCvw" alt="sololearn"></a>
 </div>
     </div>
+<!--css-->
+    <style>
+        body{
+font-family: sans-serif;
+margin: 0px;
+        }
+        nav{
+            position: fixed;
+            width: 100vw;
+            height: 40px;
+            opacity: 80px;
+            z-index: 20px;
+            background-color: #d946ef;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            display: flex;
+            justify-content:end;
+            font-size: 22px;  
+            padding: 25px;
+        }
+        .ch{
+margin: 20px;
+text-transform: capitalize;
+text-decoration: none;
+            color: white;
+            position: relative;
+            top: 10px;
+            right: 7pc;
+        }
+        .section{
+            background-color: white;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            color: black;
+        }
+        .intro{
+font-size: 23px;
+word-spacing: 2px;
+        }
+        .skills{
+            font-size: 25px;
+        }
+        .introHead{
+font-size: 45px;
+font-weight: bold;
+        }
+        .skillHead{
+            font-size: 30px;
+               font-weight: bold;
+        }
+        .secondaryEdit{
+display: flex;
+flex-direction: column;
+margin: 10pc;
+        }
+       .header{
+        position: fixed;
+            width: 100vw;
+            height: 30px;
+            opacity: 80px;
+            z-index: 20px;
+            background-color: #d946ef;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            display: flex;
+            justify-content: center;
+       }
+    </style>
 </body>
 </html>
